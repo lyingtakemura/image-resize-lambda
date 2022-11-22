@@ -1,5 +1,6 @@
-- create IAM role with S3 Access(read-only for source bucket / write only for output bucket)
+- add policy with S3 and logs access(s3:GetObject for source bucket/s3:PutObject for output bucket)
+- add IAM role with new policy
 - zip and upload as lambda layer necessary python packages(venv/lib/python3.9/site-packages/)
-- set role and layers on lambda
+- add role and layers on lambda
 - increase default 3s lambda timeout to ~10s(configuration/general configuration/timeout)
 - add s3 upload trigger on lambda
